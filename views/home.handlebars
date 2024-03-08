@@ -1,0 +1,16 @@
+<h1>Formulário de cadastro: </h1>
+
+{{#each posts}}
+    <small>{{id}}</small>
+    <h1>{{nome}}</h1>
+    <p>{{email}}</p>
+    <p>{{data_de_nascimento}}</p>
+    <p>{{telefone_com_ddd}}</p>
+    <p>{{endereço}}</p>
+    <p>{{cidade}}</p>
+    <p>{{estado}}</p>
+    <p>{{cep}}</p>
+    <p>{{tipo_de_pessoa}}</p>
+    <a href="/deletar/{{id}}"><button>Deletar</button></a>
+    <hr>
+{{/each}}
